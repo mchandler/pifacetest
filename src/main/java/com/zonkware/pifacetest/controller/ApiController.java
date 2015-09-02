@@ -40,12 +40,12 @@ public class ApiController {
         return "Ok, those LEDs are blinking...";
     }
 
-    @RequestMapping("/button")
+    @RequestMapping("/button3")
     public String test3() {
         piface.getLed(PiFaceLed.LED4).pulse(30L);
         piface.getLed(PiFaceLed.LED5).pulse(30L);
 
-        return "Ok, those LEDs are pulseing...";
+        return "Ok, those LEDs are pulsing...";
     }
 
 }
